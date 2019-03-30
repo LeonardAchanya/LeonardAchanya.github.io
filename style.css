@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-family: 'Open Sans','Roboto Slab';
+    font-size: 100%;
+    vertical-align: botton;
+    text-decoration: none;
+    box-sizing: border-box;
+
+}
+
+html body {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid dodgerblue;
+    padding: 15px;
+}
+nav img{
+    margin-left: 25px;
+    width: 40px;
+    height: 40px;
+}
+nav ul{
+list-style: none;
+}
+nav li{
+    display: inline-block;
+    padding:10px;
+}
+
+.nav-link{
+    color: black;
+}
+.nav-link:hover{
+    color:dodgerblue;
+    border-bottom: 1.5px solid salmon; 
+}
+
+main{
+    position:relative;
+}
+
+section{
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+}
+.active{
+    opacity: 1;
+    transition : "all 2s ease-in";
+}
+.about{
+    display: flex;
+    position:absolute;
+    opacity: 0;
+}
+.bio-description{
+    flex: 50%
+}
+.name{
+    font-size: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+}
+.title{
+    font-size: 20px;
+    padding-left: 30px;
+    padding-bottom: 15px;
+    letter-spacing: 1px;
+}
+.description{
+    margin-left: 110px;
+    word-spacing: 10px;
+    font-size: 20px;
+
+}
+.bio-expertise{
+    flex: 50%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.expertise{
+    width: 200px;
+    height: 150px;
+    /* background-color: aqua; */
+    text-align: center;
+    padding-top: 15px;
+}
+
+.expertise i{
+    color: dodgerblue;
+}
+.works{
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    opacity: 0;
+}
+
+.work-item{
+    width: 390px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.work-item img{
+    width: 360px;
+    height: 200px;
+    object-fit: cover;
+    padding: 5px;
+}
+
+.work-desc a{
+    color: dodgerblue;
+    border-bottom: 1.5px solid salmon; 
+}
+
+footer{
+    position: relative;
+    top: 500px;
+    color: dodgerblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer ul{
+    list-style: none;
+}
+
+footer li{
+    display: inline-block;
+    padding:10px;
+}
+
+footer a{
+    color: dodgerblue;
+}
+
+@media screen and (max-width: 840px){
+    .about{
+        flex-direction: column;
+    }
+    .description{
+        margin-left: 10px;
+    }
+
+    .bio-expertise{
+        margin-top: 100px;
+    }
+    .expertise{
+        width: 100px;
+        height: 100px;
+        /* background-color: aqua; */
+        text-align: center;
+        padding-top: 15px;
+    }
+
+
+    .works{
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .work-item{
+        width: 200px;
+        height: 250px;
+    }
+
+    .work-item img{
+        width: 200px;
+        height: 200px;
+    }
+
+    footer{
+        display: none;
+    }
+    
+
+}
