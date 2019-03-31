@@ -100,6 +100,10 @@ section{
     text-align: center;
     padding-top: 15px;
 }
+.expertise:hover{
+    transform: rotateY(360deg);
+    transition: all 3s;
+}
 
 .expertise i{
     color: white;
@@ -127,6 +131,11 @@ section{
     height: 210px;
     object-fit: cover;
     padding: 5px;
+}
+
+.work-item:hover{
+    transform: scale(1.2);
+    transition: all 2s;
 }
 
 .work-desc a{
