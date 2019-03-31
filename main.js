@@ -16,9 +16,9 @@ document.addEventListener('DOMContentLoaded', function () {
                 // section.nextElementSibling.classList.remove = "active";
                 // section.classList.add = "active";
 
-                link.style.color = "dodgerblue";
+                link.style.color = "white";
                 link.style.borderBottom = "1.5px solid salmon";
-                nextlink.style.color = "black";
+                nextlink.style.color = "white";
                 nextlink.style.borderBottom = "";
                 section.nextElementSibling.style.opacity = "0";
                 section.nextElementSibling.style.transition = "";
@@ -27,9 +27,9 @@ document.addEventListener('DOMContentLoaded', function () {
             } else {
                 // section.previousElementSibling.classList.remove = "active";
                 // section.classList.add="active";
-                prevlink.style.color = "black";
+                prevlink.style.color = "white";
                 prevlink.style.borderBottom = "";
-                link.style.color = "dodgerblue";
+                link.style.color = "white";
                 link.style.borderBottom = "1.5px solid salmon";
                 section.previousElementSibling.style.opacity = "0";
                 section.previousElementSibling.style.transition = "";

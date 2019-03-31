@@ -5,7 +5,7 @@
     outline: 0;
     font-family: 'Open Sans','Roboto Slab';
     font-size: 100%;
-    vertical-align: botton;
+    vertical-align: bottom;
     text-decoration: none;
     box-sizing: border-box;
 
@@ -15,13 +15,14 @@ html body {
     margin: 0 auto;
     width: 100%;
     height: 100%;
+    background-color: black;
 }
 
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 2px solid dodgerblue;
+    border-bottom: 2px solid white;
     padding: 15px;
 }
 nav img{
@@ -38,10 +39,10 @@ nav li{
 }
 
 .nav-link{
-    color: black;
+    color: white;
 }
 .nav-link:hover{
-    color:dodgerblue;
+    color:white;
     border-bottom: 1.5px solid salmon; 
 }
 
@@ -53,6 +54,7 @@ section{
     padding-left: 20px;
     padding-top: 20px;
     padding-right: 20px;
+    color: white;
 }
 .active{
     opacity: 1;
@@ -100,7 +102,7 @@ section{
 }
 
 .expertise i{
-    color: dodgerblue;
+    color: white;
 }
 .works{
     display: flex;
@@ -128,14 +130,14 @@ section{
 }
 
 .work-desc a{
-    color: dodgerblue;
+    color: white;
     border-bottom: 1.5px solid salmon; 
 }
 
 footer{
     position: relative;
     top: 500px;
-    color: dodgerblue;
+    color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -152,7 +154,7 @@ footer li{
 }
 
 footer a{
-    color: dodgerblue;
+    color: white;
 }
 
 @media screen and (max-width: 840px){
