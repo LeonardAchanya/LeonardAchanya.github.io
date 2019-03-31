@@ -8,7 +8,6 @@
     vertical-align: bottom;
     text-decoration: none;
     box-sizing: border-box;
-
 }
 
 html body {
@@ -81,7 +80,7 @@ section{
     letter-spacing: 1px;
 }
 .description{
-    margin-left: 110px;
+    margin-left: 70px;
     word-spacing: 10px;
     font-size: 20px;
 
@@ -89,14 +88,25 @@ section{
 .bio-expertise{
     flex: 50%;
     display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.skills-expertise p{
+    word-spacing: 10px;
+    font-size: 20px;
+
+}
+.expertise-lang{
+    display:flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
 .expertise{
     width: 200px;
-    height: 150px;
-    /* background-color: aqua; */
+    height: 90px;
     text-align: center;
     padding-top: 15px;
 }
@@ -165,6 +175,32 @@ footer li{
 footer a{
     color: white;
 }
+@media screen and (max-width: 1232px) and (min-width: 841px) {
+    .description{
+        margin-left: 10px;
+        padding: 10px;
+    }
+    .expertise{
+        width: 100px;
+        height: 120px;
+    }
+}
+
+@media screen and (max-width: 839px) and (min-width: 560px) {
+    .work-item{
+        width: 200px !important;
+        height: 230px !important;
+    }
+
+    .work-item img{
+        width: 200px !important;
+        height: 200px !important;
+    }
+
+    footer{
+    top:680px !important ;
+    }
+}
 
 @media screen and (max-width: 840px){
     .about{
@@ -173,14 +209,9 @@ footer a{
     .description{
         margin-left: 10px;
     }
-
-    .bio-expertise{
-        margin-top: 100px;
-    }
     .expertise{
         width: 100px;
         height: 100px;
-        /* background-color: aqua; */
         text-align: center;
         padding-top: 15px;
     }
@@ -201,7 +232,7 @@ footer a{
     }
 
     footer{
-        top: 700px;
+        top: 850px;
     }
     
 
