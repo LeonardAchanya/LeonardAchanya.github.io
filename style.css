@@ -60,7 +60,7 @@ section{
     transition : "all 2s ease-in";
 }
 .about{
-    display: flex;
+    /* display: flex; */
     position:absolute;
     opacity: 0;
 }
@@ -69,8 +69,8 @@ section{
 }
 .name{
     font-size: 30px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     color: turquoise;
 }
 .title{
@@ -94,6 +94,7 @@ section{
 }
 
 .skills-expertise p{
+    margin-left: 70px;
     word-spacing: 10px;
     font-size: 20px;
 
@@ -187,6 +188,10 @@ footer i{
         width: 100px;
         height: 120px;
     }
+
+    .skills-expertise p {
+        margin-left: 10px;    
+    }
 }
 
 @media screen and (max-width: 839px) and (min-width: 560px) {
@@ -233,7 +238,9 @@ footer i{
         text-align: center;
         padding-top: 15px;
     }
-
+    .skills-expertise p {
+        margin-left: 10px;    
+    }
     .works{
         flex-direction: row;
         justify-content: center;
